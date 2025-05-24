@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjay Sathiyaratnam - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #385715;
+      --blue: #153857;
+      --maroon: #571538;
+      --background-color: #f2f4f5;
+      --text-color: #222;
+      --section-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--blue), var(--maroon));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 8px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: var(--section-bg);
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--maroon);
+      border-left: 5px solid var(--green);
+      padding-left: 15px;
+    }
+
+    .experience, .project {
+      margin-bottom: 25px;
+    }
+
+    .skills span {
+      background: var(--green);
+      color: white;
+      padding: 6px 12px;
+      margin: 6px;
+      display: inline-block;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--maroon);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .section-title {
+        font-size: 1.5em;
+      }
+    }
+    nav a {
+  color: var(--blue);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--maroon);
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sanjay Sathiyaratnam</h1>
+  <p>Computer Science Graduate | Aspiring Software Developer</p>
+  <p>
+    <a href="mailto:SanjaySathiyaratnam@outlook.com">Email</a> |
+    <a href="https://github.com/nerdypineapple1">GitHub</a> |
+    <a href="https://www.linkedin.com/in/sanjay-sathiyaratnam-b87146205/">LinkedIn</a> |
+    <a href="Updated CV Sanjay.pdf" target="_blank">CV</a>
+  </p>
+</header>
+
+<nav style="position: sticky; top: 0; background: #fff; padding: 10px; text-align: center;">
+  <a href="#about">About</a> |
+  <a href="#experience">Experience</a> |
+  <a href="#projects">Projects</a> |
+  <a href="#skills">Skills</a>
+</nav>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>Motivated and adaptable Computer Science student with strong skills in full-stack web and mobile development. Experienced in building applications using Flutter, PHP, and modern web technologies such as HTML, CSS, JavaScript and Node.js. Proficient in leveraging AWS, Azure and Google cloud services to support scalable and efficient solutions. Demonstrated ability to work collaboratively in fast-paced environments through hackathons, research showcases, and tech expos.</p>
+  <p>I’m currently seeking a graduate opportunity in software development or cloud computing where I can grow, contribute, and make an impact.</p>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Experiences</h2>
+  <div class="experience">
+    <h3>Hackathon – University Hack 2024</h3>
+    <ul>
+      <li>Collaborated in a cross-functional team focused on cloud-based infrastructure for a real-world project challenge.</li>
+      <li>Gained hands-on experience with AWS services and learned how cloud solutions support scalability and efficiency in business environments.</li>
+      <li>Contributed to architectural decisions and deployment strategies during the hackathon.</li>
+    </ul>
+  </div>
+  <div class="experience">
+    <h3>AWS DeepRacer Workshop</h3>
+    <ul>
+      <li>Participated in an AI and machine learning workshop using AWS DeepRacer at university.</li>
+      <li>Trained autonomous cars to navigate a racetrack, optimizing lap times through reinforcement learning algorithms. </li>
+      <li>Developed an understanding of practical applications of ML in autonomous systems.</li>
+    </ul>
+  </div>
+  <div class="experience">
+    <h3>Research Poster Competition</h3>
+    <ul>
+      <li>Selected to present final year project at a university-wide research competition attended by industry representatives.</li>
+      <li>Showcased project design, research findings, and technical implementation, receiving positive feedback from academic and professional audiences.</li>
+      <li>Strengthened public speaking and communication skills in a technical context.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="project">
+    <h3>Gamified Science Education App</h3>
+    <p><strong>Tech:</strong> Flutter, PHP, MySQL</p>
+    <p>Designed, developed, tested and evaluated a hybrid mobile application to make science education more engaging for Gen Z students through the use of short form content and gamification.Integrated interactive elements and a user-friendly interface to enhance learning retention and participation.Focused on aligning with national curriculum content and tailoring the app’s design to Gen Z learning preferences. </p>
+
+    <video controls width="100%" style="border-radius: 8px; margin-top: 15px;">
+      <source src="recording for viva.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h3>Cloud-Based Job Application System</h3>
+    <p><strong>Tech:</strong> AWS (Lambda, S3, DynamoDB, SES), Python, HTML/CSS, JavaScript</p>
+    <p>A serverless web application that streamlines the hiring process by allowing applicants to submit forms or upload PDFs with their CV and photo. Data is stored in DynamoDB and S3.</p>
+
+    <video controls width="100%" style="border-radius: 8px; margin-top: 15px;">
+      <source src="AWS Recording.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h3>Blog Web Application</h3>
+    <p><strong>Tech:</strong> Node.js, Express, MongoDB, Mongoose, EJS, HTML/CSS, JavaScript</p>
+    <p>A full-stack blogging platform with user authentication and CRUD functionality for articles. 
+      Users can register, log in, and manage blog posts through a secure login system powered by sessions. 
+      Articles are stored in MongoDB and rendered dynamically with EJS templates. The app includes 
+      clean routing, Bootstrap styling, and form validation. Built for clarity, functionality, and ease of use.</p>
+
+    <video controls width="100%" style="border-radius: 8px; margin-top: 15px;">
+      <source src="Blog.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>  
+</section>
+
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="skills">
+    <span>Full-Stack Development: HTML, CSS, JavaScript, Node.js, PHP</span>
+    <span>Backend & APIs: RESTful APIs, MySQL, Firebase </span>
+    <span>Mobile Development: Flutter, Dart, Kotlin</span>
+    <span>Version Control: Git, GitHub</span>
+  </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title"> Cloud & Tools</h2>
+    <div class="skills">
+        <span>Cloud Platforms: AWS, Azure, Google Cloud</span>
+        <span>Dev Tools: Visual Studio Code, Figma</span>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Soft Skills</h2>
+    <div class="skills">
+        <span>Strong Communication & Team Collaboration</span>
+        <span>Problem Solving & Critical Thinking</span>
+        <span>Adaptability & Willingness to Learn</span>
+        <span>Public Speaking & Technical Presentation</span>
+    </div>
+</section>
+
+<footer>
+  <p>Thanks for visiting! I'm open to full-time graduate opportunities in tech.</p>
+  <p>Feel free to reach out if you'd like to collaborate or learn more about my work.</p>
+</footer>
+
+</body>
+</html>
